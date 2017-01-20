@@ -30,6 +30,9 @@ On Windows, sometimes resizing the console breaks the content already printed, s
 On Windows, the console output encoding is set to Unicode, whereas on other platforms, the console output encoding is set to UTF8.<br/>
 Tested only on Windows, Linux, and on a Linux through SSH using putty on Windows.
 
+- By changing the font size of the terminal, it is possible to entirely display a QR code that contains the largest data possible to encode, and still get it working.<br/>
+See screenshot bellow.
+
 # Screenshots
 
 **A large text** *(the largest printable on one screen at this resolution)*
@@ -43,3 +46,7 @@ Tested only on Windows, Linux, and on a Linux through SSH using putty on Windows
 **A small text**
 
 ![QR code in a console](images/screenshot_smalltext.png "QR code in a console")
+
+**The largest data possible to encode**
+
+![QR code in a console](images/screenshot_largest_data.png "QR code in a console")
