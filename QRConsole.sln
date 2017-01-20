@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "QRConsole", "QRConsole\QRConsole.xproj", "{49FD7AB6-1D29-4185-9421-7DD5B003FD5A}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "QRConsole.Library", "QRConsole.Library\QRConsole.Library.xproj", "{1A9678A5-FD5D-4F07-BE81-ED02397747DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,11 +17,12 @@ Global
 		{49FD7AB6-1D29-4185-9421-7DD5B003FD5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49FD7AB6-1D29-4185-9421-7DD5B003FD5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49FD7AB6-1D29-4185-9421-7DD5B003FD5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A9678A5-FD5D-4F07-BE81-ED02397747DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A9678A5-FD5D-4F07-BE81-ED02397747DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A9678A5-FD5D-4F07-BE81-ED02397747DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A9678A5-FD5D-4F07-BE81-ED02397747DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{49FD7AB6-1D29-4185-9421-7DD5B003FD5A} = {F59F53C4-0127-4CC0-A0A1-6CD424341FE8}
 	EndGlobalSection
 EndGlobal

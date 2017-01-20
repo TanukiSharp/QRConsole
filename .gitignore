@@ -3,3 +3,7 @@ QRConsole/obj/
 project.lock.json
 launchSettings.json
 *.xproj.user
+
+.vs/
+QRConsole.Library/bin/
+QRConsole.Library/obj/

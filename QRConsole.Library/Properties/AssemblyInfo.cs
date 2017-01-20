@@ -5,5 +5,5 @@
 // associated with an assembly.
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("QRConsole")]
+[assembly: AssemblyProduct("QRConsole.Library")]
 [assembly: AssemblyTrademark("")]

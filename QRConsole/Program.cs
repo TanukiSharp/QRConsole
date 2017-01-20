@@ -3,8 +3,7 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 using Microsoft.Extensions.CommandLineUtils;
-using ZXing.Common;
-using ZXing.QrCode;
+using QRConsole.Library;
 
 namespace QRConsole
 {
@@ -111,35 +110,6 @@ namespace QRConsole
 
         private void Run(string content, bool noWait, bool clear)
         {
-            var barCode = new QRCodeWriter();
-
-            BitMatrix bits;
-
-            try
-            {
-                bits = barCode.encode(content, ZXing.BarcodeFormat.QR_CODE, 0, 0);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                return;
-            }
-
-            string fullBlack = " ";
-            string bottomBlack = "\u2580";
-            string topBlack = "\u2584";
-            string fullWhite = "\u2588";
-
-            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
-                Console.OutputEncoding = Encoding.Unicode;
-            else
-                Console.OutputEncoding = Encoding.UTF8;
-
-            int offsetX = 2;
-            int offsetY = 2;
-            int width = bits.Width - 2;
-            int height = bits.Height - 2;
-
             if (noWait == false)
             {
                 Console.WriteLine("Press any key to print the QR code");
@@ -151,30 +121,21 @@ namespace QRConsole
             else
                 Console.WriteLine();
 
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+                Console.OutputEncoding = Encoding.Unicode;
+            else
+                Console.OutputEncoding = Encoding.UTF8;
+
             Console.ForegroundColor = ConsoleColor.White;
 
             try
             {
-                for (int y = offsetX; y < height; y += 2)
-                {
-                    for (int x = offsetY; x < width; x += 1)
-                    {
-                        bool top = bits[x, y + 0];
-                        bool bottom = true;
-                        if (y < height - 1)
-                            bottom = bits[x, y + 1];
-
-                        if (top && bottom)
-                            Console.Write(fullBlack);
-                        else if (top)
-                            Console.Write(topBlack);
-                        else if (bottom)
-                            Console.Write(bottomBlack);
-                        else
-                            Console.Write(fullWhite);
-                    }
-                    Console.WriteLine();
-                }
+                QRConsoleWriter.Write(content, Console.Out);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return;
             }
             finally
             {
