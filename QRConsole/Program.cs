@@ -11,11 +11,12 @@ namespace QRConsole
     {
         public static void Main(string[] args)
         {
-            var cmd = new CommandLineApplication();
-
-            cmd.Name = "QRConsole";
-            cmd.FullName = "QRConsole";
-            cmd.Description = "Tool that encodes input value into a QR code and prints it in the console";
+            var cmd = new CommandLineApplication
+            {
+                Name = "QRConsole",
+                FullName = "QRConsole",
+                Description = "Tool that encodes input value into a QR code and prints it in the console"
+            };
 
             cmd.HelpOption("-h|--help|--herp");
 
@@ -83,8 +84,7 @@ namespace QRConsole
 
         private static Encoding RetrieveEncoding(string value)
         {
-            int codePage;
-            if (int.TryParse(value, out codePage))
+            if (int.TryParse(value, out int codePage))
             {
                 try
                 {
