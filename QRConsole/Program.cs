@@ -79,7 +79,7 @@ namespace QRConsole
                     content = File.ReadAllText(filename, encoding);
             }
 
-            new Program().Run(content, noWaitOption.HasValue(), clearOption.HasValue());
+            Run(content, noWaitOption.HasValue(), clearOption.HasValue());
         }
 
         private static Encoding RetrieveEncoding(string value)
@@ -108,7 +108,7 @@ namespace QRConsole
             }
         }
 
-        private void Run(string content, bool noWait, bool clear)
+        private static void Run(string content, bool noWait, bool clear)
         {
             if (noWait == false)
             {

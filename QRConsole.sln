@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28803.452
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31717.71
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QRConsole", "QRConsole\QRConsole.csproj", "{8774929D-F4B3-4BA3-846A-E70DDD90B672}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QRConsole.Library", "QRConsole.Library\QRConsole.Library.csproj", "{9872E3D3-6014-49C4-AEB3-0E31CB4F0D19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QRConsole.Library", "QRConsole.Library\QRConsole.Library.csproj", "{06D127F1-0D37-48C3-8CAC-E631D179100F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QRConsole", "QRConsole\QRConsole.csproj", "{F86A6A7D-1567-4582-BBE2-7D74B6A4F4BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,19 +13,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8774929D-F4B3-4BA3-846A-E70DDD90B672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8774929D-F4B3-4BA3-846A-E70DDD90B672}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8774929D-F4B3-4BA3-846A-E70DDD90B672}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8774929D-F4B3-4BA3-846A-E70DDD90B672}.Release|Any CPU.Build.0 = Release|Any CPU
-		{06D127F1-0D37-48C3-8CAC-E631D179100F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{06D127F1-0D37-48C3-8CAC-E631D179100F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{06D127F1-0D37-48C3-8CAC-E631D179100F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{06D127F1-0D37-48C3-8CAC-E631D179100F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9872E3D3-6014-49C4-AEB3-0E31CB4F0D19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9872E3D3-6014-49C4-AEB3-0E31CB4F0D19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9872E3D3-6014-49C4-AEB3-0E31CB4F0D19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9872E3D3-6014-49C4-AEB3-0E31CB4F0D19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F86A6A7D-1567-4582-BBE2-7D74B6A4F4BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F86A6A7D-1567-4582-BBE2-7D74B6A4F4BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F86A6A7D-1567-4582-BBE2-7D74B6A4F4BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F86A6A7D-1567-4582-BBE2-7D74B6A4F4BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {786F8AE5-C7A6-4C18-93F5-157CA8DC53B5}
+		SolutionGuid = {0B476AA6-05D1-480C-A159-78DB8B11333A}
 	EndGlobalSection
 EndGlobal
